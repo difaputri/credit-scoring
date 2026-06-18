@@ -36,18 +36,16 @@ Menggunakan Logistic Regression
 ## 🗂️ Struktur Project
 
 ```bash
-credit-scoring-app/
-├── app.py                   # Streamlit application
-├── model.pkl                # Trained machine learning model
-├── preprocessing.pkl        # Preprocessing pipeline
-├── requirements.txt         # Dependencies
-├── dataset/
-│   └── lending_clean.csv
-├── notebooks/
-│   ├── preprocessing.ipynb
-│   ├── eda.ipynb
-│   └── modeling.ipynb
-└── README.md
+/
+├── model/                  # Folder tempat penyimpanan model
+├── .DS_Store
+├── Credit_Risk_Management_Analytics.ipynb
+├── Dockerfile              # Konfigurasi untuk Docker
+├── README.md
+├── app.py                  # Main Streamlit application
+├── main.py                 # File pendukung aplikasi
+├── requirements.txt        # Dependencies
+└── schemas.py              # Definisi skema data/input
 ```
 ---
 
@@ -61,8 +59,6 @@ Data Cleaning
 Preprocessing
    ↓
 Exploratory Data Analysis (EDA)
-   ↓
-Feature Engineering
    ↓
 Model Training
    ↓
@@ -152,12 +148,5 @@ Dataset terdiri dari informasi:
 * Model dibuat untuk tujuan pembelajaran dan analisis akademik.
 * Hasil prediksi tidak digunakan sebagai keputusan kredit aktual.
 * Beberapa fitur dilakukan preprocessing sebelum masuk ke model.
-
----
-
-## 👥 Team
-
-**Kelompok 5**
-Credit Risk Analysis Project
 
 
